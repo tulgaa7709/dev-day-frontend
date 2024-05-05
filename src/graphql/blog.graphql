@@ -1,0 +1,17 @@
+query getBlogList($categoryId: String) {
+  getBlogList(categoryId: $categoryId) {
+    _id
+    title
+    summary
+    category {
+      _id
+      name
+    }
+    updatedAt
+    createdAt
+  }
+}
+
+mutation createBlog($blog: CreateBlogInput) {
+  createBlog(blog: $blog)
+}

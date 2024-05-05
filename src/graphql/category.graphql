@@ -1,0 +1,11 @@
+query getCategoryList {
+  getCategoryList {
+    _id
+    name
+    updatedAt
+    createdAt
+  }
+}
+mutation createCategory($category: CreateCategoryInput) {
+  createCategory(category: $category)
+}

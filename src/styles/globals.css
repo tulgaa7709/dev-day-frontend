@@ -31,3 +31,9 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer components {
+  .primary_button {
+    @apply bg-white text-black h-[45px] px-[30px] rounded-xl font-bold flex items-center gap-2 active:bg-[#ffffff90];
+  }
+}
